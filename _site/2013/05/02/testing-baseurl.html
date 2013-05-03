@@ -2,20 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Testing BaseURL | Base URL Test</title>
+    <title>Testing Base URL | Base URL Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Testing Jekyll Base Url">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="/baseurltest/css/style.css" rel="stylesheet">
   </head>
   <body>
   <div id="container">
 
 
-<h1>Testing BaseURL</h1>
+<h1>Testing Base URL</h1>
 <p>
 <span class="published" title="Thu, 02 May 2013 00:00:00 -0500"><i class="icon-calendar"></i> May 02, 2013</span>
 </p>
 <p>This is a test to see if I can find a way to test my site locally as well as have it work on GitHub pages as a project subdirectory.</p>
+
+<p>What I&#8217;ve found is that the solution is to specify in <code>_config.yml</code> <code>baseurl: /projectname</code> and then in my code I use urls like:</p>
+<pre>
+
+&lt;a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark"&gt;{{ post.title }}&lt;/a&gt;
+and
+&lt;link href="{{ site.baseurl }}/css/style.css" rel="stylesheet"&gt;
+
+</pre>
+<p>This will make everything work properly when pushed to GitHub. Now all that&#8217;s left is making it work locally.</p>
+
+<p>There are two solutions for this. The first is to just run jekyll like normal and then go to <code>localhost:4000/projectname</code> and test your site.</p>
+
+<p>If you&#8217;d prefer to not have that subdirectory locally while testing all you have to do is run <code>jekyll base-url=&quot;&quot;</code> and then you can go to <code>localhost:4000</code> and test like normal.</p>
 
 </div>
 </body>
