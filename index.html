@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="hfeed">
+{% for post in site.posts %}
+<div class="row-fluid">
+    <div class="span12 hentry">
+        <h2 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
+        <p class="published" title="{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ post.date | date: "%b %d, %Y" }}</p>
+        <p class="entry-summary">{{ post.content | strip_html | truncatewords: 50 }}</p>
+        <p><a href="{{ site.baseurl }}{{ post.url }}" rel="nofollow">Read more</a></p>
+    </div>
+</div>
+{% endfor %}
+</div>

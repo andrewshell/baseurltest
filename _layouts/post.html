@@ -1,0 +1,9 @@
+{% include header.html %}
+
+<h1>{{ page.title }}</h1>
+<p>
+<span class="published" title="{{ page.date | date: "%a, %d %b %Y %H:%M:%S %z" }}"><i class="icon-calendar"></i> {{ page.date | date: "%b %d, %Y" }}</span>
+</p>
+{{ content }}
+
+{% include footer.html %}
