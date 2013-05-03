@@ -3,7 +3,8 @@ layout: post
 title: Testing Base URL
 ---
 This is a test to see if I can find a way to test my site locally as well as 
-have it work on GitHub pages as a project subdirectory.
+have it work on GitHub pages as a project subdirectory and have the URLs 
+screwed up.
 
 What I've found is that the solution is to specify in `_config.yml` 
 `baseurl: /projectname` and then in my code I use urls like:
