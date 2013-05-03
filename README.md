@@ -1,3 +1,7 @@
+View this site live at <a href="http://blog.andrewshell.org/baseurltest/">http://blog.andrewshell.org/baseurltest/</a>
+
+---
+
 This is a test to see if I can find a way to test my site locally as well as 
 have it work on GitHub pages as a project subdirectory and have the URLs 
 screwed up.
