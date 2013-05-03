@@ -26,3 +26,6 @@ and then go to `localhost:4000/projectname` and test your site.
 If you'd prefer to not have that subdirectory locally while testing all you 
 have to do is run `jekyll base-url=""` and then you can go to `localhost:4000`
 and test like normal.
+
+Just remember to remove the baseurl line if you decide to add a CNAME to your
+site.
