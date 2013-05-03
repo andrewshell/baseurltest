@@ -4,3 +4,4 @@ description: Testing Jekyll Base Url
 safe:     true
 auto:     true
 server:   true
+baseurl:  /baseurltest
