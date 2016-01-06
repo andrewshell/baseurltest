@@ -1,4 +1,4 @@
-View this site live at <a href="http://blog.andrewshell.org/baseurltest/">http://blog.andrewshell.org/baseurltest/</a>
+View this site live at <a href="http://andrewshell.github.io/baseurltest">http://andrewshell.github.io/baseurltest</a>
 
 ---
 
